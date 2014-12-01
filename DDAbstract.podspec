@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'DDAbstract'
-  s.version      = '1.0.0'
+  s.version      = '1.0.1'
   s.summary      = 'Abstract ViewController and View, used as a base for all screens in an app.'
 
   s.homepage     = 'https://github.com/DeloitteDigital/DDAbstract'
