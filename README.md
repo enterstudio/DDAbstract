@@ -4,7 +4,7 @@ Deloitte Digital's Abstract ViewController and View, used as a base for all scre
 #LICENSE (BSD-3-Clause)
 Copyright (C) 2009-2014 Deloitte Digital. All rights reserved.
 
-DDAbstract can be downloaded from: https://github.com/dotb/DDAbstract
+DDAbstract can be downloaded from: https://github.com/DeloitteDigital/DDAbstract
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
