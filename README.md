@@ -1,5 +1,5 @@
 #DDAbstract
-Deloitte Digital's Abstract ViewController and View, used as a base for all screens in an app.
+[Deloitte Digital](http://www.deloittedigital.com)'s Abstract ViewController and View, used as a base for all screens in an app.
 
 #LICENSE (BSD-3-Clause)
 Copyright (C) 2009-2014 Deloitte Digital. All rights reserved.
