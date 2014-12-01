@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'BSD-3-Clause', :file => 'LICENSE' }
 
   s.source       = { :git => 'https://github.com/DeloitteDigital/DDAbstract.git', :tag => s.version.to_s }
-  s.source_files = 'DDAbstract', 'DDAbstract/*.{h,m}'
+  s.source_files = 'DDAbstract', 'DDAbstract/**/*.{h,m}'
   s.framework    = 'UIKit'
 
   s.requires_arc = true
