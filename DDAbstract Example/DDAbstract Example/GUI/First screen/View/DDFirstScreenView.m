@@ -25,6 +25,7 @@
         
         [self setScreenTitleLabel:[[UILabel alloc] initWithFrame:CGRectZero]];
         [_screenTitleLabel setText:@"Hello, world! This is the first screen."];
+        [_screenTitleLabel setNumberOfLines:0];
         [self addSubview:_screenTitleLabel];
     }
     return self;
@@ -34,7 +35,7 @@
 {
     [super layoutSubviews];
     
-    [self.screenTitleLabel setFrame:CGRectMake(100,100,100,100)];
+    [self.screenTitleLabel setFrame:CGRectMake(10,50,200,50)];
 }
 
 @end

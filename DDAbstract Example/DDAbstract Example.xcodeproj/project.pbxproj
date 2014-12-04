@@ -16,6 +16,8 @@
 		98589F961A305AC0002D6ACE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98589F8F1A305AC0002D6ACE /* AppDelegate.m */; };
 		98589F971A305AC0002D6ACE /* DDFirstScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98589F941A305AC0002D6ACE /* DDFirstScreenViewController.m */; };
 		98589F9A1A305B3A002D6ACE /* DDFirstScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98589F991A305B3A002D6ACE /* DDFirstScreenView.m */; };
+		98589F9D1A3066E1002D6ACE /* DDFirstScreenView_Phone.m in Sources */ = {isa = PBXBuildFile; fileRef = 98589F9C1A3066E1002D6ACE /* DDFirstScreenView_Phone.m */; };
+		98589FA01A306737002D6ACE /* DDFirstScreenView_Pad.m in Sources */ = {isa = PBXBuildFile; fileRef = 98589F9F1A306737002D6ACE /* DDFirstScreenView_Pad.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		98589F941A305AC0002D6ACE /* DDFirstScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFirstScreenViewController.m; sourceTree = "<group>"; };
 		98589F981A305B3A002D6ACE /* DDFirstScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFirstScreenView.h; sourceTree = "<group>"; };
 		98589F991A305B3A002D6ACE /* DDFirstScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFirstScreenView.m; sourceTree = "<group>"; };
+		98589F9B1A3066E1002D6ACE /* DDFirstScreenView_Phone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFirstScreenView_Phone.h; sourceTree = "<group>"; };
+		98589F9C1A3066E1002D6ACE /* DDFirstScreenView_Phone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFirstScreenView_Phone.m; sourceTree = "<group>"; };
+		98589F9E1A306737002D6ACE /* DDFirstScreenView_Pad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFirstScreenView_Pad.h; sourceTree = "<group>"; };
+		98589F9F1A306737002D6ACE /* DDFirstScreenView_Pad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFirstScreenView_Pad.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +198,10 @@
 			children = (
 				98589F981A305B3A002D6ACE /* DDFirstScreenView.h */,
 				98589F991A305B3A002D6ACE /* DDFirstScreenView.m */,
+				98589F9B1A3066E1002D6ACE /* DDFirstScreenView_Phone.h */,
+				98589F9C1A3066E1002D6ACE /* DDFirstScreenView_Phone.m */,
+				98589F9E1A306737002D6ACE /* DDFirstScreenView_Pad.h */,
+				98589F9F1A306737002D6ACE /* DDFirstScreenView_Pad.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +305,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98589F9D1A3066E1002D6ACE /* DDFirstScreenView_Phone.m in Sources */,
+				98589FA01A306737002D6ACE /* DDFirstScreenView_Pad.m in Sources */,
 				98589F971A305AC0002D6ACE /* DDFirstScreenViewController.m in Sources */,
 				98589F8C1A305A73002D6ACE /* DDAbstractView.m in Sources */,
 				98589F8B1A305A73002D6ACE /* DDAbstractViewController.m in Sources */,
