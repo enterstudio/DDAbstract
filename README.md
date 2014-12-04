@@ -36,9 +36,9 @@ To use DDAbstract, add the following line to your `podfile`:
 ### Option 2: Manually include files
 [Download DDAbstract](https://github.com/DeloitteDigital/DDAbstract/archive/master.zip) and manually include a reference to the files under DDAbstract/.
 
-##Setup
+##Usage
 
-If you're setting up a new project to use DDAbstract
+Follow these steps, if you are setting up a new project to use DDAbstract.
 
 - Create a Universal iOS application in Xcode 6 (or later).
 - Install DDAbstract, either via Pods or manual include.
@@ -54,7 +54,7 @@ If you're setting up a new project to use DDAbstract
 	
 @end
 ```
-- Create a new View for our ViewController: new file -> CocoaTouch Class. Call it `DDFirstScreenView` and make it inherit `DDAbstractView`. The name of your View **must** match the name of your ViewController. You can also have custom views that are specific to a device type by appending `_Pad` or `_Phone` to your view file's name. In our case, that would be:
+- Create a new View for our ViewController: new file -> CocoaTouch Class. Call it `DDFirstScreenView` and make it inherit `DDAbstractView`. The name of your View **must** match the name of your ViewController. You can also have custom views that are specific to a device type by appending `_Pad` or `_Phone` to your view class' name. In our case, that would be:
 	- `DDFirstScreenView` (base UIView, includes properties/methods relevant to all device types)
 	- `DDFirstScreenView_Pad` inherits `DDFirstScreenView`
 	- `DDFirstScreenView_Phone` inherits `DDFirstScreenView`
