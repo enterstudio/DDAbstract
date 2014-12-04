@@ -36,9 +36,9 @@ To use DDAbstract, add the following line to your `podfile`:
 ### Option 2: Manually include files
 [Download DDAbstract](https://github.com/DeloitteDigital/DDAbstract/archive/master.zip) and manually include a reference to the files under DDAbstract/.
 
-##Setup
+##Usage
 
-If you're setting up a new project to use DDAbstract
+Follow these steps, if you are setting up a new project to use DDAbstract.
 
 - Create a Universal iOS application in Xcode 6 (or later).
 - Install DDAbstract, either via Pods or manual include.
