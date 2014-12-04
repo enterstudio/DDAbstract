@@ -36,6 +36,47 @@ To use DDAbstract, add the following line to your `podfile`:
 ### Option 2: Manually include files
 [Download DDAbstract](https://github.com/DeloitteDigital/DDAbstract/archive/master.zip) and manually include a reference to the files under DDAbstract/.
 
+##Setup
+
+If you're setting up a new project to use DDAbstract
+
+1. Create a universal iOS application in Xcode 6 (or later).
+2. Install DDAbstract, either via Pods or manual include.
+3. Delete (and move to trash) the Main.storyboard file, created by Xcode by default. We're not going to use storyboards...
+4. In your Target, remove the reference to Main in Deployment Info -> Main Interface. Leave that field blank, we'll launch what we need from the AppDelegate.
+4. Rename the default `ViewController`, created by Xcode, to something more meaningful (e.g. `DDFirstScreenViewController`).
+5. Edit your `DDFirstScreenViewController.h` (header file), so that imports `DDAbstractViewController.h` and inherits `DDAbstractViewController`.
+
+```  objective-c
+#import <UIKit/UIKit.h>
+#import "DDAbstractViewController.h"
+	
+@interface DDFirstScreenViewController : DDAbstractViewController
+	
+@end
+```
+
+6. Create a new View for our ViewController: new file -> CocoaTouch Class. Call it `DDFirstScreenView` and make it inherit `DDAbstractView`. The name of your view **must** match the name of your ViewController.
+7. Tell the app to launch your ViewController on launch, by updating `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` in AppDelegate.
+
+```  objective-c
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // Setup the application window
+    [self setWindow:[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]];
+    
+    // Setup our first screen's ViewController
+    DDFirstScreenViewController *viewController = [[DDFirstScreenViewController alloc] init];
+    
+    // Let's go!
+    [_window setRootViewController:viewController];
+    [_window makeKeyAndVisible];
+    
+    return YES;
+}
+```
+8. Go have a drink - you're done! Build and run your app.
+
 
 #Who is [Deloitte Digital](http://www.deloittedigital.com) anyway?
 
