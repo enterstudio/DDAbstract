@@ -14,7 +14,7 @@
 #DDAbstract Overview
 This repo is home to our Abstract ViewController and View classes. We use these as our base for all screens (and sub-screens) in an iOS app.
 
-We've found that using Storyboards can become cumbersome for apps with lots of screens and UI components. Reuse of UI components can me made a lot easier if we used plain-old UIViews. The primary purpose of this library is to attach, associate and load a UIView to a ViewController, based on the device type (iPhone/iPad) and ViewController's class name.
+We've found that using Storyboards can become cumbersome for apps with lots of screens and UI components. Reuse of UI components can me made a lot easier if we used plain-old UIViews. The primary purpose of this library is to attach, associate and load a UIView to a UIViewController, based on the device type (iPhone/iPad) and ViewController's class name.
 
 We typically combine this software-design pattern, with a UIView layout library called [SQLayout](https://github.com/dotb/SQLayout) - we encourage you to do the same.
 
@@ -40,13 +40,12 @@ To use DDAbstract, add the following line to your `podfile`:
 
 If you're setting up a new project to use DDAbstract
 
-1. Create a universal iOS application in Xcode 6 (or later).
-2. Install DDAbstract, either via Pods or manual include.
-3. Delete (and move to trash) the Main.storyboard file, created by Xcode by default. We're not going to use storyboards...
-4. In your Target, remove the reference to Main in Deployment Info -> Main Interface. Leave that field blank, we'll launch what we need from the AppDelegate.
-4. Rename the default `ViewController`, created by Xcode, to something more meaningful (e.g. `DDFirstScreenViewController`).
-5. Edit your `DDFirstScreenViewController.h` (header file), so that imports `DDAbstractViewController.h` and inherits `DDAbstractViewController`.
-
+- Create a Universal iOS application in Xcode 6 (or later).
+- Install DDAbstract, either via Pods or manual include.
+- Delete (and move to trash) the Main.storyboard file, created by Xcode by default. We're not going to use storyboards...
+- In your Target, remove the reference to Main in Deployment Info -> Main Interface. Leave that field blank, we'll launch what we need from the AppDelegate.
+- Rename the default `ViewController`, created by Xcode, to something more meaningful (e.g. `DDFirstScreenViewController`).
+- Edit your `DDFirstScreenViewController.h` (header file), so that it imports `DDAbstractViewController.h` and inherits `DDAbstractViewController`.
 ```  objective-c
 #import <UIKit/UIKit.h>
 #import "DDAbstractViewController.h"
@@ -55,10 +54,11 @@ If you're setting up a new project to use DDAbstract
 	
 @end
 ```
-
-6. Create a new View for our ViewController: new file -> CocoaTouch Class. Call it `DDFirstScreenView` and make it inherit `DDAbstractView`. The name of your view **must** match the name of your ViewController.
-7. Tell the app to launch your ViewController on launch, by updating `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` in AppDelegate.
-
+- Create a new View for our ViewController: new file -> CocoaTouch Class. Call it `DDFirstScreenView` and make it inherit `DDAbstractView`. The name of your View **must** match the name of your ViewController. You can also have custom views that are specific to a device type by appending `_Pad` or `_Phone` to your view file's name. In our case, that would be:
+	- `DDFirstScreenView` (base UIView, includes properties/methods relevant to all device types)
+	- `DDFirstScreenView_Pad` inherits `DDFirstScreenView`
+	- `DDFirstScreenView_Phone` inherits `DDFirstScreenView`
+- Tell the app to launch an instance of `DDFirstScreenViewController`, by updating `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` in AppDelegate.
 ```  objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
@@ -75,8 +75,7 @@ If you're setting up a new project to use DDAbstract
     return YES;
 }
 ```
-8. Go have a drink - you're done! Build and run your app.
-
+- Go enjoy a beverage - you're done! Build and run your app.
 
 #Who is [Deloitte Digital](http://www.deloittedigital.com) anyway?
 
