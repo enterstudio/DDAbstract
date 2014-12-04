@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Deloitte Digital. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DDFirstScreenViewController.h"
 
-@interface ViewController ()
+@interface DDFirstScreenViewController ()
 
 @end
 
-@implementation ViewController
+@implementation DDFirstScreenViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

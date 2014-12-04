@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DDAbstractViewController.h"
 
-@interface ViewController : UIViewController
+@interface DDFirstScreenViewController : DDAbstractViewController
 
 
 @end

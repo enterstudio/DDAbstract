@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DDFirstScreenViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // Setup the application window
+    [self setWindow:[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]];
+    
+    // Setup our first screen's ViewController
+    DDFirstScreenViewController *viewController = [[DDFirstScreenViewController alloc] init];
+    
+    // Let's go!
+    [_window setRootViewController:viewController];
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 
