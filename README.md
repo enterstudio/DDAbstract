@@ -54,7 +54,7 @@ Follow these steps, if you are setting up a new project to use DDAbstract.
 	
 @end
 ```
-- Create a new View for our ViewController: new file -> CocoaTouch Class. Call it `DDFirstScreenView` and make it inherit `DDAbstractView`. The name of your View **must** match the name of your ViewController. You can also have custom views that are specific to a device type by appending `_Pad` or `_Phone` to your view file's name. In our case, that would be:
+- Create a new View for our ViewController: new file -> CocoaTouch Class. Call it `DDFirstScreenView` and make it inherit `DDAbstractView`. The name of your View **must** match the name of your ViewController. You can also have custom views that are specific to a device type by appending `_Pad` or `_Phone` to your view class' name. In our case, that would be:
 	- `DDFirstScreenView` (base UIView, includes properties/methods relevant to all device types)
 	- `DDFirstScreenView_Pad` inherits `DDFirstScreenView`
 	- `DDFirstScreenView_Phone` inherits `DDFirstScreenView`
