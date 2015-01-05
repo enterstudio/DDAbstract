@@ -84,7 +84,7 @@ Follow these steps, if you are setting up a new project to use DDAbstract.
 Pioneered in Australia, Deloitte Digital is committed to helping clients unlock the business value of emerging technologies. We provide clients with a full suite of digital services, covering digital strategy, user experience, content, creative, engineering and implementation across mobile, web and social media channels.
 
 #LICENSE (BSD-3-Clause)
-Copyright (C) 2009-2014, Deloitte Digital. All rights reserved.
+Copyright (C) 2009-2015, Deloitte Digital. All rights reserved.
 
 DDAbstract can be downloaded from: https://github.com/DeloitteDigital/DDAbstract
 
